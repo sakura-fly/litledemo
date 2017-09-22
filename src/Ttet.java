@@ -8,7 +8,7 @@ public class Ttet {
 
 		for (int i = 1; i < num; i++) {
 			int sum = i;
-			for (int j = i + 1; sum <= num; j++) {
+			for (int j = i + 1; sum < num; j++) {
 				sum += j;
 				if (sum == num) {
 					String res = num + "=";
@@ -17,7 +17,6 @@ public class Ttet {
 					}
 					res += j;
 					System.out.println(res);
-					break;// 退出本次循环，开始下一次循环
 				}
 			}
 		}
